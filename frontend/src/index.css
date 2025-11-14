@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-courtroom-dark text-gray-100 font-sans;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-gray-800 rounded-lg shadow-xl border border-gray-700;
+  }
+  
+  .btn-primary {
+    @apply px-6 py-3 bg-courtroom-accent text-gray-900 font-semibold rounded-lg hover:bg-yellow-500 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  
+  .btn-secondary {
+    @apply px-6 py-3 bg-gray-700 text-gray-100 font-semibold rounded-lg hover:bg-gray-600 transition-all duration-300;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-gray-100 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-courtroom-accent;
+  }
+  
+  .textarea-field {
+    @apply w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-gray-100 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-courtroom-accent min-h-[120px];
+  }
+}
+
+.gavel-animation {
+  animation: gavel-strike 2s ease-in-out infinite;
+}
+
+@keyframes gavel-strike {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+}
+
+.pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(212, 175, 55, 0.8);
+  }
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
