@@ -668,8 +668,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👨‍💻 Author
 
 **Your Name**
-- GitHub: [@yourusername](https://github.com/mahendrakumar19)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/mahendrakumar19)
+- GitHub: (https://github.com/mahendrakumar19)
+- LinkedIn: (https://linkedin.com/in/mahendrakumar19)
 - Email: mahendrakumaruohyd@gmail.com
 
 ---
